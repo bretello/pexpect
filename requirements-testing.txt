@@ -4,3 +4,4 @@ coveralls
 ptyprocess
 pytest
 pytest-cov
+pytest-timeout

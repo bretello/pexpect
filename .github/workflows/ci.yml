@@ -45,7 +45,7 @@ jobs:
       run: |
         ./tools/display-sighandlers.py
         ./tools/display-terminalinfo.py
-        pytest --cov pexpect --cov-config .coveragerc
+        pytest --timeout 30 --cov pexpect --cov-config .coveragerc
 
     - name: Check coverage
       if: github.repository_owner == 'pexpect'
